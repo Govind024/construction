@@ -1,0 +1,338 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: auto;
+}
+header{
+    position: relative;
+    width:100%;
+    background-color:black;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;	
+}
+#tog{
+    font-size: 30px;
+    color:white;
+    padding:10px;
+   cursor: pointer;
+   font-weight: bolder;
+    display: none;
+}
+.logo-text{
+    color:white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+    padding:10px 15px;
+}
+.nav{
+    display: flex;
+    list-style: none;
+}
+.nav li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px 15px;
+    color:white;
+    font-size: 18px;
+}
+.nav li a:hover{
+    transition: 0.5s;
+    background-color:grey;
+}
+            /* first-page */
+
+.first_page{
+    width:100%;
+    height:550px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.6)), url("first.jpg");
+    background-size:100% 100%;
+}
+.pic_info{
+    text-transform: uppercase;
+    text-align: center;
+    color:white;
+    font-family: cursive;
+    font-weight: lighter;
+}
+.pic_info:hover{
+    color:greenyellow;
+    transition:0.2s;
+}
+/* ----------services---------- */
+.services{
+    margin:30px 0px;
+    width:100%;
+}
+.heading{
+    color:lightseagreen;
+    margin:15px auto;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width:100px;
+    padding-bottom: 5px;
+    font-size:24px;
+    text-transform: uppercase;
+    border-bottom: 3px solid gold;
+}
+.services_detail{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.service_card{
+    width:25%;
+}
+.service_card img{
+    width:100%;
+    height:175px;
+}
+.service_info{
+    background-color:rgb(233, 227, 227);
+}
+.service_info h2{
+    border-bottom:2px solid gold;
+    margin:15px;
+    text-transform: capitalize;
+    display: inline-block;
+}
+.service_info p{
+    text-align: justify;
+    padding:0px 10px 10px 10px;
+}
+/* ------------------about-------------------- */
+.about{
+    width:100%;
+    display: flex;
+    margin:30px 0px;
+}
+.left{
+    background-color: lightblue;
+}
+.left p{
+    text-align: justify;
+    padding:8px;
+}
+.right img{
+    width:300px;
+}
+/* small detail */
+.small_detail{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.box{
+    padding:8px 0px;
+    background-color:rgb(59, 187, 144);
+    width:25%;
+    text-align:center;
+}
+.box h3,.box p{
+    text-transform: capitalize;
+    border-right:3px solid white;
+    color:white;
+}
+.last h3,.last p{
+    border:none;
+}
+/* --------------------project --------------*/
+.project{
+  width:100%;
+}
+.project_images{
+    display: flex;
+    justify-content: space-between;
+}
+.project_images img{
+    width:25%;
+    padding:10px 5px;
+    border-radius:20px;
+}
+
+/* ================contact======= */
+.contact{
+    display: flex;
+    justify-content: space-around;
+}
+.left_part,.right_part{
+    width:45%;
+
+}
+.inquires{
+    padding:15px 0px;
+}
+.inquires h2{
+
+    text-transform:uppercase;
+}
+.inquires p{
+    text-transform: capitalize;
+    line-height: 20px;
+}
+.forms input{
+    margin:8px 0px;
+    width: 100%;
+    padding:8px 15px;
+    outline: none;
+    border-radius: 5px;
+    border:none;
+    background-color: gainsboro;
+}
+.forms h2{
+    text-transform: uppercase;
+    margin-bottom:15px;
+    display: inline;
+    border-bottom:6px solid orchid;
+}
+label{
+    text-transform: uppercase;
+    margin-top:10px;
+}
+textarea{
+    display: block;
+    width:50%;
+    height:100px;
+}
+button{
+    float:right;
+    padding:8px;
+    color:white;
+    border:none;
+    outline: none;
+    background-color: rgba(17, 13, 223, 0.863);
+    cursor: pointer;
+}
+button:hover{
+    background-color: blueviolet;
+}
+.right_part{
+    display: flex;
+    flex-direction: column;
+}
+.office,.employment{
+    margin: 20px;
+}
+.right_part h1{
+    text-transform: capitalize;
+}
+.right_part p{
+    padding-left:20px;
+    text-transform: capitalize;
+}
+.right_part a{
+    text-transform: none;
+}
+.right_part h3{
+    text-transform: uppercase;
+}
+.footer{
+    margin-top:15px;
+    background-color: gray;
+    color:white;
+    text-align: center;
+    width: 100%;
+}
+/* ================media query=========== */
+
+@media only screen and (max-width:700px)
+{
+     
+    header{
+        width:100%;
+        flex-direction: column;
+    }
+    .logo{
+        display: flex;
+    }
+    #tog{
+        margin-left:70px;
+        display: block;
+    }
+    .first_page{
+        background-size: cover;
+        width: 100%;
+    }
+    .pic_info h1{
+        font-size:20px;
+    }
+    .nav{
+        flex-direction: column;
+        width:100%;
+        display: none;
+    }
+    .nav li{
+        text-align: center;
+        padding:10px 0px;
+    }
+    .services_detail{
+        width:70%;
+        margin:0px auto;
+        flex-direction: column;
+    }
+    .service_card{
+        margin:20px 0px;
+        width:100%;
+    }
+    .about{
+        width:100%;
+        flex-direction: column;
+
+    }
+    .left,.right{
+        width:100%;
+    }
+    
+    .about img{
+        width:100%;
+    }
+    .project_images{
+        flex-direction: column;
+        width:100%;
+        margin: 0px auto;
+        align-items: center;
+    }
+    .project img{
+        width:100%;
+    }
+    .small_detail{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .box{
+        background-color:rgb(59, 187, 144);
+        width:100%;
+        text-align:center;
+    }
+    .box h3{
+        border:none;
+    }
+    .box p{
+        text-transform: capitalize;
+        border-bottom:3px solid white;
+        color:white;
+        border-right: none;
+    }
+    .last h3,.last p{
+        border:none;
+    }
+
+
+    .contact{
+        width:90%;
+        flex-direction: column;
+    }
+    .left_part,.right_part{
+        width:90%;
+        margin: 0px auto;
+    }
+ 
+}
